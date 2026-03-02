@@ -1,0 +1,30 @@
+:root{
+  --bg:#0b1220; --surface:#0f1a2b; --surface2:#111f33; --text:#e6edf7; --muted:#a7b3c6;
+  --primary:#3b82f6; --border:#1f2a44; --danger:#ef4444;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --sans: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--sans);background:linear-gradient(180deg,var(--bg),#070c16);color:var(--text)}
+a{color:var(--primary);text-decoration:none} a:hover{text-decoration:underline}
+header{border-bottom:1px solid var(--border);background:rgba(15,26,43,.75);backdrop-filter:blur(6px);position:sticky;top:0;z-index:10}
+.wrap{max-width:980px;margin:0 auto;padding:18px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .dot{width:10px;height:10px;border-radius:999px;background:var(--primary);box-shadow:0 0 0 4px rgba(59,130,246,.15)}
+.brand h1{font-size:16px;margin:0;font-weight:650}
+.brand span{color:var(--muted);font-size:13px}
+nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+nav a{padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:rgba(17,31,51,.7);font-size:13px}
+main{padding:22px 0 50px}
+.card{border:1px solid var(--border);background:rgba(17,31,51,.65);border-radius:14px;padding:16px;box-shadow:0 10px 35px rgba(0,0,0,.25)}
+.grid{display:grid;gap:14px} @media(min-width:840px){.grid.cols2{grid-template-columns:1fr 1fr}}
+h2{margin:0 0 10px 0;font-size:18px} h3{margin:18px 0 8px 0;font-size:15px}
+p{line-height:1.55;margin:10px 0} ul,ol{margin:10px 0 10px 20px;line-height:1.55} li{margin:6px 0}
+code,pre{font-family:var(--mono)}
+pre{background:rgba(15,26,43,.9);border:1px solid var(--border);border-radius:12px;padding:12px;overflow:auto}
+.kbd{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-bottom-color:rgba(0,0,0,.35);border-radius:8px;background:rgba(17,31,51,.85);font-family:var(--mono);font-size:12px}
+.badge{display:inline-block;padding:3px 8px;border-radius:999px;border:1px solid var(--border);background:rgba(59,130,246,.12);font-size:12px}
+.badge.danger{background:rgba(239,68,68,.12)}
+.footer{border-top:1px solid var(--border);color:var(--muted);padding:18px 0;font-size:13px}
+.small{color:var(--muted);font-size:13px}
+hr{border:none;border-top:1px solid var(--border);margin:18px 0}

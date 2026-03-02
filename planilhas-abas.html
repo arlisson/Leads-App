@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Planilhas e abas | Preenche Fácil - Avance</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <div class="dot"></div>
+      <div>
+        <h1>Preenche Fácil - Avance</h1>
+        <span>Guia de uso (documentação rápida)</span>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="instalacao.html">Instalação</a>
+      <a href="uso-basico.html">Uso básico</a>
+      <a href="campos.html">Campos e tipos</a>
+      <a href="planilhas-abas.html" aria-current="page">Planilhas e abas</a>
+      <a href="configuracoes.html">Configurações</a>
+      <a href="arquivos-controle.html">Arquivos de controle</a>
+      <a href="licenca.html">Licença e acesso</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    
+<section class="card">
+  <h2>Planilhas e abas</h2>
+  <p>O app trabalha sempre com uma planilha <span class="kbd">.xlsx</span> e uma <b>aba</b> selecionada.</p>
+
+  <h3>Importar campos do Excel</h3>
+  <ul>
+    <li>Ao escolher uma planilha existente, você pode importar a linha 1 (cabeçalho) e transformar os títulos em campos do app.</li>
+    <li>Se a planilha não tiver cabeçalho válido, o app cria os cabeçalhos com base na configuração local.</li>
+  </ul>
+
+  <h3>Sincronização automática</h3>
+  <ul>
+    <li>O app monitora mudanças no arquivo e tenta sincronizar:
+      <ul>
+        <li>lista de abas (criação/renomeação/remoção)</li>
+        <li>cabeçalho (linha 1) da aba selecionada</li>
+      </ul>
+    </li>
+    <li>Se você estiver digitando em um campo no momento, a sincronização de cabeçalho é adiada para não atrapalhar.</li>
+  </ul>
+
+  <h3>Botão “↻ Atualizar”</h3>
+  <ul>
+    <li>Recarrega a lista de abas e aplica a sincronização do cabeçalho quando necessário.</li>
+    <li>Se a aba atual não existir mais, o app alterna automaticamente para a primeira aba disponível.</li>
+  </ul>
+
+  <h3>Salvar em nova linha</h3>
+  <p>Ao salvar, o app procura a próxima linha vazia (a partir da linha 2) e grava os valores respeitando o tipo do campo.</p>
+</section>
+
+    <div class="footer">
+      <div>© 2026. Documentação gerada para publicação no GitHub.</div>
+    </div>
+  </div>
+</main>
+</body>
+</html>

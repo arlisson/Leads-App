@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQ | Preenche Fácil - Avance</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <div class="dot"></div>
+      <div>
+        <h1>Preenche Fácil - Avance</h1>
+        <span>Guia de uso (documentação rápida)</span>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="instalacao.html">Instalação</a>
+      <a href="uso-basico.html">Uso básico</a>
+      <a href="campos.html">Campos e tipos</a>
+      <a href="planilhas-abas.html">Planilhas e abas</a>
+      <a href="configuracoes.html">Configurações</a>
+      <a href="arquivos-controle.html">Arquivos de controle</a>
+      <a href="licenca.html">Licença e acesso</a>
+      <a href="faq.html" aria-current="page">FAQ</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    
+<section class="card">
+  <h2>FAQ</h2>
+
+  <h3>1) O app não salva e diz que a planilha está em uso</h3>
+  <p>Feche o arquivo no Excel e tente novamente. O Excel cria um arquivo de bloqueio enquanto a planilha está aberta.</p>
+
+  <h3>2) Criei uma planilha vazia e o app disse que não tem cabeçalho</h3>
+  <p>Se a linha 1 estiver vazia, o app pode criar os títulos automaticamente com base nos campos configurados localmente.</p>
+
+  <h3>3) Alterei nomes das colunas no Excel e os campos do app mudaram</h3>
+  <p>Esse é o comportamento esperado: o app tenta sincronizar o cabeçalho (linha 1) com os campos para evitar divergência.</p>
+
+  <h3>4) Como adiciono outro domínio de e-mail?</h3>
+  <p>Abra a engrenagem &gt; <b>Domínios de e-mail</b> e adicione na lista.</p>
+
+  <h3>5) Onde fica o texto do rodapé?</h3>
+  <p>Ele é carregado do arquivo <span class="kbd">controle_ui.json</span> e é interpretado como HTML simples.</p>
+
+  <h3>6) Quero “resetar” o aplicativo</h3>
+  <p>Feche o app e faça backup dos arquivos JSON de controle. Em seguida, remova-os para que o app recrie os padrões na próxima execução.</p>
+</section>
+
+    <div class="footer">
+      <div>© 2026. Documentação gerada para publicação no GitHub.</div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
