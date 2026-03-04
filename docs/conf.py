@@ -40,3 +40,4 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # html_theme = 'alabaster'
 html_static_path = ['_static']
+html_baseurl = "https://arlisson.github.io/Leads-App/docs/site/"
